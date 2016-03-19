@@ -29,7 +29,10 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles'
 )
 
-PROJECT_APPS = ()
+PROJECT_APPS = (
+    'django_tennis.apps.events',
+    'django_tennis.apps.users'
+)
 
 INSTALLED_APPS += PROJECT_APPS
 
@@ -43,10 +46,10 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'django-tennis.urls'
+ROOT_URLCONF = 'django_tennis.urls'
 
 # Python dotted path to the WSGI application used by Django's runserver.
-WSGI_APPLICATION = 'django-tennis.wsgi.application'
+WSGI_APPLICATION = 'django_tennis.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases
@@ -54,9 +57,9 @@ WSGI_APPLICATION = 'django-tennis.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'django-tennis',
+        'NAME': 'django_tennis',
         'USER': 'postgres',
-        'PASSWORD': '',
+        'PASSWORD': 'kree',
         'HOST': '',                      # Empty for localhost through domain sockets or '127.0.0.1' for localhost through TCP.
         'PORT': '',                      # Set to empty string for default.
     }

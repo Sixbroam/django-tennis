@@ -56,12 +56,12 @@ venv
 *.iws
 .idea
 
-django-tennis/settings/local.py
-django-tennis/settings/production.py
+django_tennis/settings/local.py
+django_tennis/settings/production.py
 
 # collect static output directory
-django-tennis/assets/
-django-tennis/static/
+django_tennis/assets/
+django_tennis/static/
 
 .DS_Store
 
@@ -69,5 +69,5 @@ django-tennis/static/
 node_modules/
 
 # bower packages
-django-tennis/assets-src/vendor/
+django_tennis/assets-src/vendor/
 .sass-cache/
