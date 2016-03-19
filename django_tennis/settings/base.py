@@ -26,7 +26,8 @@ INSTALLED_APPS = (
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'django.contrib.staticfiles'
+    'django.contrib.staticfiles',
+    'rest_framework'
 )
 
 PROJECT_APPS = (
@@ -114,6 +115,10 @@ TEMPLATES = [
         },
     }
 ]
+
+
+# Misc parameters
+ADMIN_SITE_HEADER = 'Django Tennis Administration'
 
 
 # .local.py overrides all the common settings.
