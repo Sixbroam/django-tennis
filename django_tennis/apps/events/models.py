@@ -24,7 +24,7 @@ class Match(TimeStampedModel):
     players = models.ManyToManyField(Player, related_name='matches')
     winner = models.ForeignKey(Player, related_name='wins', blank=True, null=True)
     loser = models.ForeignKey(Player, related_name='losses', blank=True, null=True)
-    sets = models.ManyToManyField(Set, related_name='score', blank=True, null=True)
+    sets = models.ManyToManyField(Set, related_name='score')
 
     class Meta:
         pass
